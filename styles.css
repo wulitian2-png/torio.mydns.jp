@@ -1,0 +1,50 @@
+A:link {
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #FF9801; TEXT-DECORATION: none; font-weight: bold
+}
+A:visited {
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #9900F; TEXT-DECORATION: none; font-weight: bold
+}
+A:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #FF9801; TEXT-DECORATION: none; font-weight: bold
+}
+
+
+.memo {
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9px; color: #F0F0F0; text-decoration: none
+}
+.content {
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #333333; text-decoration: none
+}
+.copyright {
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #D0D0D0; text-decoration: none
+}
+.error {
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #ff3333; text-decoration: none
+}
+.topic {
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 15px; color: #FF0000; font-weight: bold
+}
+.topics {
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; color: #333333; font-weight: bold
+}
+.mainmenu {
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #FFFFFF; text-decoration: none
+}
+.menu {
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #FF9801; font-weight: bold
+}
+.warning {
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #8080FF; text-decoration: none; text-align: justify; font-weight: bold
+	}
+.comment {
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; font-weight:bold; color: #606060; text-decoration: none; text-align: justify
+}
+.linkorange {
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #FF9801; text-decoration: none; text-align: justify
+	}
+.logintable {
+	border:1px solid #FF9801
+}
+h1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 15px; color: #333333; font-weight: bold; margin: 0px; padding: 0px; 
+}
