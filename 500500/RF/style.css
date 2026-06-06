@@ -1,0 +1,566 @@
+@charset "Shift_JIS";
+
+
+/*--------------------------------------------
+
+Name: n009 Hearts
+Version: 1.0
+Date: 2007-09-01
+Author: アメ
+Site: {neut}
+URL: http://neut.xtr.jp/
+
+--------------------------------------------*/
+
+
+/*	　目次
+----------------------------------------------
+1.全体
+2.見出し
+3.リンク
+4.リスト
+5.フォーム
+6.テキスト装飾
+7.メニューフレーム
+8.メインフレーム
+9.イラストページ
+10.indexページ
+--------------------------------------------*/
+
+
+/*	　カラー設定
+----------------------------------------------
+濃いピンク　#f39
+薄いピンク　#fecbe0
+--------------------------------------------*/
+
+
+/*	　1.全体
+--------------------------------------------*/
+* {
+	margin: 0;
+	padding: 0;
+	line-height: 1.8; /* 全体の行の高さ */
+	font-style: normal;	
+	font-weight: normal;
+	font-size: 100%;
+}
+html,
+body {
+	scrollbar-3dlight-color: #fff;
+	scrollbar-arrow-color: #fff;
+	scrollbar-base-color: #fff;
+	scrollbar-darkshadow-color: #fff;
+	scrollbar-face-color: #fff;
+	scrollbar-highlight-color: #fff;
+	scrollbar-shadow-color: #fff;
+	scrollbar-track-color: #eee;
+}
+* html {
+	overflow-y: scroll;
+}
+body {
+	margin: 0 auto;
+	color: #555; /* 全体のフォントカラー */
+	background: #effdb4 url('img/bg.gif') repeat fixed; /* 全体の背景色 */
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 65%; /* 全体のフォントサイズ */
+	text-align: center;
+}
+p {
+	padding-bottom: 1.2em;
+}
+img {
+	border: 0;
+}
+br {
+	letter-spacing: normal;
+}
+.frame {
+	border: 0;
+}
+/* 記号の文字化け対策 */
+.mark {
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "ＭＳ Ｐゴシック", sans-serif;
+}
+/*	　2.見出し
+--------------------------------------------*/
+h2 {
+	margin-bottom: 1em;
+	line-height: 1;
+	color: #888;
+	font-family: "Century Gothic", Futura, "Gill Sans", Helvetica, Arial, sans-serif;
+	font-size: 30px;
+}
+h3 {
+	margin-bottom: 0.5em;
+	font-family: "Century Gothic", Futura, "Gill Sans", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+}
+h4 {
+	margin-bottom: 0.5em;
+	font-weight: bold;
+	font-size: 12px;
+}
+/*	　3.リンク
+--------------------------------------------*/
+a {
+	color: #f39;
+	text-decoration: none;
+}
+a:hover {
+	color: #555;
+}
+/* Novels-新しいもの */
+.new {
+	border-bottom: 1px #f39 dashed;
+}
+/*	　4.リスト
+--------------------------------------------*/ 
+ul,
+ol,
+dl {
+	padding-bottom: 1.2em;
+}
+ul li {
+	padding: 0;
+	list-style: disc inside;
+}
+ol li {
+	list-style: decimal inside;
+}
+dd {
+	margin-left: 1em;
+	padding-left: 1em;
+	border-left: 1px #555 dashed;
+}
+/* リスト1（横並び・Bkm-Category2で使用） */
+ul.horizontal li {
+	margin-right: 2em;
+	padding: 0;
+	display: inline;
+	list-style: none outside;
+	background: none;
+}
+/* リスト2（画像横並び・Img-Category1とBkm-Category1で使用） */
+ul.imglist li {
+	padding: 0;
+	display: inline;
+	list-style: none outside;
+	background: none;
+}
+ul.imglist a:hover {
+	border: none;
+}
+ul.imglist li img {
+	margin: 0 5px 5px 0;
+}
+/* 番号付きリスト1（横並び・Novels-Long storyで使用） */
+ol.horizontal {
+	padding-bottom: 0;
+}
+ol.horizontal li {
+	margin-right: 1em;
+	display: inline;
+	list-style: none outside;
+}
+/* 番号付きリスト2（横並び・Novels-Titleで使用） */
+ol.horizontal2 {
+	padding-bottom: 0;
+}
+ol.horizontal2 li {
+	margin: 0;
+	display: inline;
+}
+/* 定義リスト1（横並び・Top-What's newとAbout-About linkとAbout-Mail formで使用） */
+dl.horizontal dt {
+	width: 9em;
+	line-height: 1.8;
+}
+dl.horizontal dd {
+	margin: -1.8em 0 0 9em;
+	padding: 0;
+	border: none;
+}
+dl.horizontal dd.second {
+	margin-top: 0.1em;
+}
+/* イメージとテキストの定義リスト1（Bkm-Category3で使用） */
+dl.imgtextlist1 dt {
+	padding: 0;
+	float: left;
+	width: 200px;
+	background-image: none;
+}
+dl.imgtextlist1 dt a:hover {
+	border: none;
+}
+dl.imgtextlist1 dd {
+	margin-left: 200px;
+	padding-left: 20px;
+	border: none;
+}
+/* イメージとテキストの定義リスト2（Bkm-Category4で使用） */
+div.imgtextlist2_box {
+	width: 100%;
+}
+	/* IE6用 */
+	* html div.imgtextlist2_box {
+		margin-bottom: 18px;
+	}
+dl.imgtextlist2 {
+	margin: 0 5px 10px 0;
+	float: left;
+	width: 200px;
+}
+dl.imgtextlist2 dt {
+	padding: 0;
+	width: 200px;
+	background-image: none;	
+}
+dl.imgtextlist2 dt a:hover {
+	border: none;
+}
+dl.imgtextlist2 dd {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+	/* floatクリア用（※削除不可） */
+	div.imgtextlist1:after,
+	div.imgtextlist2_box:after {
+		height: 0;
+		visibility: hidden;
+		content: ".";
+		display: block;
+		clear: both;
+	}
+	div.imgtextlist1:after,
+  	div.imgtextlist2_box {
+		/*\*/*/
+		overflow: hidden;
+		/**/
+	}
+/*	　5.フォーム
+--------------------------------------------*/
+fieldset {
+	border: 0;
+}
+legend {
+	display: none;
+}
+input,
+select, 
+textarea {	
+	margin-bottom: 6px;
+	border: none;
+	line-height: 1.2;
+	color: #555;
+	background-color: #fff;	
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", "Osaka", sans-serif;	
+}
+textarea {
+	width: 300px;
+}
+input:hover,
+select:hover,
+textarea:hover,
+input:focus,
+select:focus,
+textarea:focus {
+	background-color: #eee;
+}
+input.button {
+	margin-right: 0.5em;
+	padding: 0 1px;
+	border: 1px solid #fff;
+	vertical-align: middle;	
+	color: #f39;
+	background-color: #fff;
+	font-family: "Century Gothic", Futura, "Gill Sans", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	cursor: pointer;
+}
+input.button:hover,
+input.button:focus {
+	border: 1px solid #eee;
+	background-color: #eee;
+}
+input.check,
+input.radio {
+    margin: 0 0.5em 0 0;
+	border: none;
+	width: auto;
+	background: none;
+}
+/*	　6.テキスト装飾
+--------------------------------------------*/
+/* 強調 */
+em {
+	font-weight: bold;
+}
+/* より強い強調 */
+strong {
+	border-bottom: 3px #555 double;
+	font-weight: bold;
+}
+/* 追加 */
+ins {
+	text-decoration: underline;
+}
+/* 削除 */
+del {
+	color: #999;
+	text-decoration: line-through;
+}
+/* 引用 */
+blockquote {
+	margin: 0 0 1.2em;
+	padding: 0 6px;
+	border-left: 5px #999 solid;
+	width: 603px;
+	background: #fff;
+}
+blockquote p {
+	margin: 0;
+	padding: 0;
+	background: none;
+}
+cite,
+q {
+	font-style: oblique;
+}
+/* 整形済みテキスト */
+pre {
+	margin: 0 0 1.2em 0;
+	padding: 0.5em 1em;
+	width: 80%;
+	height: 100px;
+	overflow: scroll;
+	background-color: #fff;
+	font-family: "Osaka－等幅", monospace;
+}
+code {
+	font-family: "Osaka－等幅", monospace;
+}
+/* アドレス */
+address {
+	margin-bottom: 1em;
+	font-style: normal;
+}
+/* コード */
+code {
+	font-family: "Osaka－等幅", monospace;
+}
+/* テーブル */
+table {
+	margin-bottom: 1.2em;
+	border-collapse: collapse;
+}
+th,
+td {
+	padding: 0 0.8em;
+	border: 1px solid #555;	
+}
+th {
+	color: #fff;	
+	background-color: #555;
+	text-align: center;
+}
+td {	
+	color: #555;
+	background-color: #fff;
+}
+/* 装飾ボックス */
+div.deco {
+	margin-bottom: 1.2em;
+	padding: 0.5em;
+	border: 1px #555 dashed;
+	color: #555;
+}
+/*	　7.メニューフレーム
+--------------------------------------------*/
+body#menuframe {
+	background: #fff;
+	text-align: left;
+}
+div#navi {
+	margin: 0 auto;
+	width: 760px;
+	height: 80px;
+	background-color: #fff;
+	text-align: center;
+}
+/* サイト名 */
+div#navi h1 {
+	margin: 22px 70px 0 20px;
+	padding-top: 6px;
+	float: left;
+	line-height: 1;
+	vertical-align: baseline;
+	color: #555;
+	font-family: "Century Gothic", Futura, "Gill Sans", Helvetica, Arial, sans-serif;
+	font-size: 26px;
+	text-align: left;
+}
+div#navi h1 a {
+	line-height: 1;
+	color: #555;
+	text-decoration: none;
+}
+div#navi h1 a:hover {
+	color: #fecbe0;
+}
+/* メニュー */
+ul#menu {
+	margin: 0;
+	padding: 0;
+	float: left;
+	text-align: left;
+}
+ul#menu li {
+	margin: 32px 18px 0 0;
+	padding: 0;
+	float: left;
+	display: inline;
+	line-height: 1;
+}
+ul#menu li a {
+	list-style: none outside;
+	color: #444;
+	font-family: "Century Gothic", Futura, "Gill Sans", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}
+ul#menu li a:hover {
+	color: #bbb;
+}
+/* 著作権 */
+ul#copy {
+	margin: 36px 20px 0 0;
+	float: right;
+}
+ul#copy li {
+	padding: 0;
+	display: inline;
+	list-style: none outside;
+	line-height: 1;
+	font-family: "Century Gothic", Futura, "Gill Sans", Helvetica, Arial, sans-serif;
+	font-size: 10px;
+}
+ul#copy li a {
+	color: #555;
+}
+ul#copy li a:hover {
+	color: #fecbe0;
+}
+/*	　8.メインフレーム
+--------------------------------------------*/
+div#main {
+	margin: 0 auto;
+	padding: 25px 0;
+	width: 625px;
+	text-align: left;
+}
+/* メイン画像 */
+p#mainimg {
+	margin: 0;
+	float: left;
+	width: 300px;
+}
+div#contents {
+	float: right;
+	width: 305px;
+}
+/* テキストボックス */
+div.textbox {
+	margin: 0 0 15px 0;
+}
+/* スクロールボックス（What's newで使用） */
+div.scrollbox {
+	margin: 0 0 15px 0;
+	height: 100px;
+	overflow: auto;
+}
+/*	　9.イラストページ
+--------------------------------------------*/
+/* imgメニューフレーム */
+body#imgmenu {
+	margin: 0;
+	background: #fff;
+	width: 87%;
+	text-align: left;
+}
+body#imgmenu li a {
+	color: #555;
+}
+body#imgmenu li a:hover {
+	color: #f39;
+}
+body#imgmenu div#navi {
+	margin: 0;
+	padding: 25px 15px;
+	width: auto;
+	text-align: left;
+}
+body#imgmenu h1 {
+	margin: 0 0 1.5em;
+	float: none;
+	line-height: 1;
+	font-family: "Century Gothic", Futura, "Gill Sans", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+}
+/* imgメインフレーム */
+body#img_main {
+	margin: 0 auto;
+	width: 87%;
+	text-align: center;
+}
+body#img_main div#main {
+	width: auto;
+	text-align: center;
+}
+/*	　10.indexページ
+--------------------------------------------*/
+body#index div#container {
+	margin: 40px auto;
+	width: 450px;
+}
+/* サイト名 */
+body#index h1 {
+	margin: 0 0 20px 0;
+	padding: 6px 0 6px 20px;
+	line-height: 1;
+	vertical-align: baseline;
+	color: #555;
+	background: #fff;
+	font-family: "Century Gothic", Futura, "Gill Sans", Helvetica, Arial, sans-serif;
+	font-size: 26px;
+	text-align: left;
+}
+body#index h2 {
+	margin-bottom: 0.5em;
+	color: #555;
+	font-family: "Century Gothic", Futura, "Gill Sans", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	text-align: left;
+}
+body#index p {
+	text-align: left;
+}
+body#index p#enter {
+	margin-top: 30px;
+	font-family: "Century Gothic", Futura, "Gill Sans", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	text-align: center;
+}
+body#index p#enter a {
+	padding: 1px 1em;
+	border: none;
+	display: block;
+	color: #f39;
+	background: #fff;
+}
+body#index p#enter a:hover {
+	color: #f39;
+	background: #eee;
+}
