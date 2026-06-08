@@ -48,9 +48,9 @@
 
 七、相关链接
 
-• 原网站地址：ontheheaven.siromuku.com
+• 原网站地址：torio.mydns.jp
 
-• Wayback Machine 存档：https://web.archive.org/web/20260000000000*/ontheheaven.siromuku.com
+• Wayback Machine 存档：https://web.archive.org/web/20080000000000*/torio.mydns.jp
 
 八、鸣谢
 
